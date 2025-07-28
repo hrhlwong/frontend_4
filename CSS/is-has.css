@@ -1,0 +1,49 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+}
+/* 
+.container :is(h1, h2, p) {
+    color: blue;
+} */
+
+/* The above .container is(h1, h2, p) same as
+.container h1 {}
+.container h2 {}
+.container p {}
+*/
+
+p a {
+    color yellow;
+}
+
+p :is(a) {
+    color: red;
+}
+
+a:is(:hover, :focus) {
+    background-color: pink;
+}
+
+/* wher is lower special than is() */
+.container :where(h1, h2, p) {
+    columns: green;
+}
+
+/* from child select parent, upward selection */
+.container :has(p, a) {
+    border: 1px solid blue;
+    color: red;
+}

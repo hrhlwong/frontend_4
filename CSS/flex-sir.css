@@ -1,0 +1,152 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* finished setting global settings*/
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header{
+    width: 100%;
+    background-color: coral;
+    padding: 5px 10px;
+}
+
+h1{
+    color: #333;
+    text-transform: capitalize;
+}
+
+nav{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.horizontal-list {
+  list-style: none;       /* Remove default bullets */
+  padding: 0;             /* Remove padding */
+  margin: 0;              /* Remove margin */
+  display: flex;          /* Lay out items in a row */
+  gap: 20px;              /* Optional spacing between items */
+}
+
+.horizontal-list a{
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: coral;
+}
+
+/* header setting is done! */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.as-content{
+    /*border: 1px solid red;*/
+    width: 70%;
+}
+
+.as-post{
+    /*border: 1px solid red;*/
+    width: 300px;
+}
+
+.as-post-items{
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    margin: 0px;
+}
+
+.as-post-items li{
+    padding: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.as-post-items li a{
+    color: black;
+}
+
+.as-post-items a:hover{
+    color: coral;
+}
+
+
+p{
+    font-size: 14px;
+}
+
+h3{
+    background-color: coral;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    margin-bottom: 0; ;
+}
+
+@media (max-width: 600px){
+main{
+    flex-direction: column-reverse;
+}
+
+article{
+    width: 95%;
+    margin: 0 auto;
+}
+
+aside{
+    width: 95%;
+    margin: 0 auto;
+}
+
+ul.nav{
+    flex-direction: column;
+}
+
+.post li{
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* my */
+.as-post{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.as-content{
+    width: 95%;
+    margin: 0 auto;
+}
+
+}
+
+

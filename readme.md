@@ -1,4 +1,4 @@
-3. cut the layout into sctions
+3. cut the layout into sections
 
 # Step 4 : add Navbar
 1. copy navbar from hanburger.html
